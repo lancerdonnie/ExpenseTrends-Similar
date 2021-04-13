@@ -12,5 +12,5 @@ export default async ({
 }) => {
   app.use(json());
   app.use(cors());
-  app.use(container.cradle.SimilarController);
+  app.use('/similar', container.cradle.SimilarController);
 };
